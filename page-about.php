@@ -4,7 +4,7 @@ Template Name: About Page
 */
 ?>
 <?php get_header(); ?>
-<section class="hero-about">
+<section class="about-container">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
