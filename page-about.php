@@ -8,11 +8,12 @@ Template Name: About Page
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 			</article>
 		
 			<section class="authorboxes">
+				<h3><?php the_field('organizers_list_title'); ?></h3>
 				<?php
 
 				// Get the authors from the database ordered by user nicename
@@ -38,9 +39,9 @@ Template Name: About Page
 
 				<article class="author-info">
 						<a href="<?php echo $user->user_url; ?>" title="Visit <?php echo $user->display_name; ?>'s website" class="avatar">
-							<?php echo get_avatar($user->user_email, '96', $avatar); ?>
+							<?php echo get_avatar($user->user_email, '256', $avatar); ?>
 						</a>
-						<h3>
+						<h4>
 							<?php if($user->user_url) : ?>
 								<a href="<?php echo $user->user_url; ?>" title="Visit <?php echo $user->display_name; ?>'s website">
 							<?php endif; ?>
@@ -48,9 +49,9 @@ Template Name: About Page
 							<?php if($user->user_url) : ?>
 								</a>
 							<?php endif; ?>
-						</h3>
+						</h4>
 						<?php if($user->twitter) : ?>
-							<a href="http://twitter.com/<?php echo $user->twitter; ?>" title="Visit <?php echo $user->display_name; ?>'s Twitter account">
+							<a href="http://twitter.com/<?php echo $user->twitter; ?>" title="Visit <?php echo $user->display_name; ?>'s Twitter account" class="twitter">
 							    @<?php echo $user->twitter; ?>
 							</a>
 						<?php endif; ?>

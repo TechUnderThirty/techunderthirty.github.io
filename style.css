@@ -254,11 +254,11 @@ textarea {
   color: #000000;
 }
 a {
-  color: #99be40;
+  color: #00a78d;
   text-decoration: none;
 }
-a a:hover {
-  color: #89af2d;
+a:hover {
+  color: #99be40;
 }
 ::-moz-selection {
   background: #08433a;
@@ -329,10 +329,10 @@ form .error-text {
   padding: 1em;
 }
 .other-header a {
-  color: #99be40;
+  color: #08433a;
 }
 .other-header a:hover {
-  color: #89af2d;
+  color: rgba(8, 67, 58, 0.5);
 }
 .other-header h1 {
   font-family: 'Oleo Script Swash Caps', Georgia, cursive;
@@ -696,11 +696,11 @@ input[type="submit"][disabled],
   margin-left: .5em;
 }
 #footer .btn-mini i {
-  color: #99be40;
+  color: #00a78d;
   font-size: 1.25em;
 }
 #footer .btn-mini:hover i {
-  color: #89af2d;
+  color: #99be40;
 }
 .hero-home {
   padding: 4.5em 10% 6em;
@@ -726,13 +726,96 @@ input[type="submit"][disabled],
 .about-container {
   width: 90%;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1000px;
 }
 .about-container article.page {
-  padding: 40px 0;
+  padding: 60px 80px 60px;
+  background: rgba(0, 167, 141, 0.15);
+  border-bottom: 1px solid rgba(0, 167, 141, 0.25);
 }
 .about-container article.page h2 {
   font-size: 30px;
+  margin-bottom: 10px;
+}
+.about-container h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.about-container .authorboxes {
+  padding: 0 0 60px;
+  border-width: 1px 0;
+}
+.about-container .authorboxes:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.about-container .authorboxes h3 {
+  color: #999999;
+  text-align: center;
+  display: block;
+  margin: 60px auto 50px;
+  position: relative;
+}
+.about-container .authorboxes h3:before,
+.about-container .authorboxes h3:after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: rgba(0, 167, 141, 0.25);
+  top: 50%;
+}
+.about-container .authorboxes h3:before {
+  left: 0;
+}
+.about-container .authorboxes h3:after {
+  right: 0;
+}
+.about-container .authorboxes .author-info {
+  width: 30%;
+  margin-right: 5%;
+  float: left;
+}
+.about-container .authorboxes .author-info:nth-child(3n+1) {
+  margin: 0;
+}
+.about-container .authorboxes .author-info a.avatar {
+  display: block;
+  margin: 0 0 10px;
+}
+.about-container .authorboxes .author-info a.avatar img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.about-container .authorboxes .author-info h4 {
+  display: inline-block;
+}
+.about-container .authorboxes .author-info h4 a {
+  color: #08433a;
+}
+.about-container .authorboxes .author-info h4 a:hover {
+  color: #99be40;
+}
+.about-container .authorboxes .author-info .twitter {
+  font-size: 14px;
+}
+.about-container .authorboxes .author-info p.author-description {
+  border-top: 1px dotted rgba(0, 167, 141, 0.4);
+  margin: 5px 0 0;
+  padding: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.65em;
+}
+.about-container .volunteers {
+  padding: 60px 80px;
+  background: #f6f6f6;
+  border-top: 1px solid #ececec;
+}
+.about-container .volunteers h3 {
+  color: #000000;
 }
 @media screen and (max-width: 1280px) {
   .hero-home {
