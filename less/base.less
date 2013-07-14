@@ -1,0 +1,74 @@
+
+/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {font-family: 'Raleway', Helvetica Neue, Helvetica, sans-serif;}
+
+/* using local fonts? make sure to read up on Paul Irish's 
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+body, select, input, textarea {color: #051c18;}
+
+a {color: #99be40; text-decoration:none;}
+a:hover {color: #89af2d;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #08433a; color: #fff; text-shadow: none;}
+::selection {background: #08433a; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #08433a;} 
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+p {line-height:1.5em; margin-bottom:1em;}
+
+/* And here begins the Wordpress fun.
+-------------------------------------------------------------------------------*/
+input[type="text"], input[type="email"], textarea {width:97%; padding:.5em 1.5%; margin-bottom:1em; border:1px #00A78D solid;}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {outline:none; border-color:#00937c;}
+label {display:block; margin-bottom:.5em; font-weight:bold;}
+form .required {color:#00A78D;}
+form .error-text {margin-bottom:.5em; font-size:.75em;}
+
+.other-header {background:#00A78D; padding:1em;}
+.other-header a {color:#051c18;}
+.other-header a:hover {color:#99be40;}
+.other-header h1 {font-family: 'Oleo Script Swash Caps', Georgia, cursive; font-size:2em; display:inline-block; margin-right:10px;}
+.other-header h2 {font-size:1em; display:inline; color:#fff; font-weight:normal;}
+
+.hero-home {padding:4.5em 10% 6em; background:#00A78D;}
+.hero-home article {width:60%; padding:0 10% 0 0; float:left;}
+.hero-home h1 {font-family: 'Oleo Script Swash Caps', Georgia, cursive; font-size:5.5em; line-height:1em;}
+.hero-home h2 {font-size:2em; margin:.5em 0 1em;}
+.hero-home p {color:#fff;}
+.hero-home #sidebar {margin:8em 0 0; width:30%; float:left; background:#99be40; padding:2em 2.5%; border:1px solid #00937c; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+.hero-home #sidebar a {color:#017664;}
+.hero-home #sidebar a:hover {color:#00937c;}
+.hero-home #sidebar h2 {margin:0;}
+.hero-home #sidebar .widget {border-bottom:1px #00A78D dotted; padding-bottom:1.5em; margin-bottom:1em;}
+.hero-home #sidebar .widget:last-child {border-bottom:0; padding-bottom:0; margin-bottom:0;}
+.hero-home #sidebar .widget label {margin-top:.5em;}
+
+.view-more-link {color:#fff; background:#00937c; display:inline-block; padding:.25em .5em; border-radius:5px; margin-left:5px; font-weight:normal; font-size:.45em; text-decoration:none;}
+
+#page-wrap {}
+
+.events-single {margin-bottom:1em;}
+.event .entry-title {margin-bottom:.25em; font-size:2em;}
+#sidebar h3.event-title {margin-top:.25em; font-size:1.5em;}
+.single-event .meta, .single-event .view-more-link {display:none;}
+.event .em-location-map, .event .em-locations-map {width: 100% !important;}
+
+.one-fourth, .three-fourths {float:left;}
+.one-fourth {width:25%;}
+.three-fourths {width:75%;}
+
+/*.page-template-page-event-ideas-php {background:#99be40;}*/
+#FSContact1, #FSContact2 {padding:2em 5%; border-top:1px solid #ccc; margin-top:2em;}
+#FSContact1 form, #FSContact2 form {max-width:700px; margin:0 auto;}
+
+#footer {border-top:1px dotted #ccc; padding-top:.5em; padding-bottom:.75em; margin:3em 0 0; text-align:center; background:#fff;}
+#footer .btn-mini {margin-left:.5em;}
+#footer .btn-mini i {color:#99be40; font-size:1.25em;}
+#footer .btn-mini:hover i {color:#89af2d;}
