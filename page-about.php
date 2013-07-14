@@ -1,54 +1,73 @@
 <?php
 /*
-Template Name: Index Page
+Template Name: About Page
 */
 ?>
-<?php get_header('home'); ?>
-<section class="hero-home">
+<?php get_header(); ?>
+<section class="hero-about">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
-		<article id="post-<?php the_ID(); ?>">
-			<header id="header">
-				<h1><?php bloginfo('name'); ?></h1>
-				<h2 class="description"><?php bloginfo('description'); ?></h2>
-			</header>
-			<div class="entry">
-
-				<?php the_content(); ?>
-
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-
-			</div>
-
-		</article>
-
-		<?php endwhile; endif; ?>
-		<?php get_sidebar(); ?>
-		<div class="clearfix"></div>
-</section>
-
-<section class="posts-content">		
-	<h2>Blog Posts <a href="blog" class="view-more-link">View all</a></h2>
-		<?php query_posts('posts_per_page=3'); ?>
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-
-				<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-
-				<?php include (TEMPLATEPATH . '/_/inc/meta-home.php' ); ?>
-
-				<div class="entry">
-					<?php the_content(); ?>
-				</div>
+				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+				<?php the_content(); ?>
 			</article>
-		<?php endwhile; ?>
-		<h2><a href="blog" class="view-more-link">But wait! There's more! View all posts</a></h2>
+		
+			<section class="authorboxes">
+				<?php
 
-		<?php else : ?>
+				// Get the authors from the database ordered by user nicename
+					global $wpdb;
+					$query = "SELECT ID, user_nicename from $wpdb->users ORDER BY user_nicename";
+					$author_ids = $wpdb->get_results($query);
 
-			<h2>No posts.</h2>
+				// Loop through each author
+					foreach($author_ids as $author) :
 
-		<?php endif; ?>
+					// Get user data
+						$user = get_userdata($author->ID);
+
+					// If user level is above 0 or login name is "admin", display profile
+						if($user->user_level > 0 || $user->user_login == 'admin') :
+
+						// Get link to author page
+							$user_link = get_author_posts_url($user->ID);
+
+						// Set default avatar (values = default, wavatar, identicon, monsterid)
+							$avatar = 'identicon';
+				?>
+
+				<article class="author-info">
+						<a href="<?php echo $user->user_url; ?>" title="Visit <?php echo $user->display_name; ?>'s website" class="avatar">
+							<?php echo get_avatar($user->user_email, '96', $avatar); ?>
+						</a>
+						<h3>
+							<?php if($user->user_url) : ?>
+								<a href="<?php echo $user->user_url; ?>" title="Visit <?php echo $user->display_name; ?>'s website">
+							<?php endif; ?>
+								<?php echo $user->display_name; ?>
+							<?php if($user->user_url) : ?>
+								</a>
+							<?php endif; ?>
+						</h3>
+						<?php if($user->twitter) : ?>
+							<a href="http://twitter.com/<?php echo $user->twitter; ?>" title="Visit <?php echo $user->display_name; ?>'s Twitter account">
+							    @<?php echo $user->twitter; ?>
+							</a>
+						<?php endif; ?>
+						<p class="author-description"><?php echo $user->description; ?></p>
+				</article> <!-- end post -->
+				<?php endif; ?>
+			<?php endforeach; ?>
+			</section>
+			
+			<section class="volunteers">
+				<article>
+					<h3><?php the_field('additional_information_title'); ?></h3>
+					<?php the_field('additional_information'); ?>
+				</article>
+			</section>
+		<?php endwhile; endif; ?>
+		<div class="clearfix"></div>
 </section>
 
 <?php get_footer(); ?>

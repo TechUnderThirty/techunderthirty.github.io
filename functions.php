@@ -44,4 +44,14 @@
     
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
 
+	 //Twitter & FB Contact Methods
+	 function my_new_contactmethods( $contactmethods ) {
+	     // Add Twitter
+	     $contactmethods['twitter'] = 'Twitter';
+
+	     return $contactmethods;
+	 }
+	 add_filter('user_contactmethods','my_new_contactmethods',10,1);
+
+
 ?>
