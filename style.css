@@ -246,6 +246,7 @@ button {
 /* Mixins */
 body {
   font-family: 'Raleway', Helvetica Neue, Helvetica, sans-serif;
+  background: url(img/ticks.png);
 }
 body,
 select,
@@ -729,13 +730,23 @@ input[type="submit"][disabled],
   max-width: 1000px;
 }
 .about-container article.page {
-  padding: 60px 80px 60px;
+  padding: 60px 70px;
   background: rgba(0, 167, 141, 0.15);
   border-bottom: 1px solid rgba(0, 167, 141, 0.25);
 }
 .about-container article.page h2 {
   font-size: 30px;
   margin-bottom: 10px;
+}
+.about-container article.page p {
+  font-size: 20px;
+}
+.about-container article.page p:last-of-type {
+  margin: 0;
+}
+.about-container article.page p,
+.about-container .volunteers p {
+  color: #333333;
 }
 .about-container h3 {
   font-size: 28px;
@@ -744,6 +755,7 @@ input[type="submit"][disabled],
 .about-container .authorboxes {
   padding: 0 0 60px;
   border-width: 1px 0;
+  text-shadow: 0 -2px 0 rgba(255, 255, 255, 0.75);
 }
 .about-container .authorboxes:after {
   content: "";
@@ -803,6 +815,7 @@ input[type="submit"][disabled],
   font-size: 14px;
 }
 .about-container .authorboxes .author-info p.author-description {
+  color: #666666;
   border-top: 1px dotted rgba(0, 167, 141, 0.4);
   margin: 5px 0 0;
   padding: 10px 0 0;
@@ -811,11 +824,14 @@ input[type="submit"][disabled],
 }
 .about-container .volunteers {
   padding: 60px 80px;
-  background: #f6f6f6;
-  border-top: 1px solid #ececec;
+  background: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .about-container .volunteers h3 {
   color: #000000;
+}
+.about-container .volunteers p:last-of-type {
+  margin: 0;
 }
 @media screen and (max-width: 1280px) {
   .hero-home {
