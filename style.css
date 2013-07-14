@@ -90,20 +90,14 @@ nav,
 section {
   display: block;
 }
-/* Responsive images and other embedded objects
-   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
-   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
 img,
 object,
 embed {
   max-width: 100%;
 }
-/* force a vertical scrollbar to prevent a jumpy page */
 html {
   overflow-y: scroll;
 }
-/* we use a lot of ULs that aren't bulleted. 
-	don't forget to restore the bullets within content. */
 ul {
   list-style: none;
 }
@@ -112,8 +106,8 @@ q {
   quotes: none;
 }
 blockquote:before,
-blockquote:after,
 q:before,
+blockquote:after,
 q:after {
   content: '';
   content: none;
@@ -125,6 +119,10 @@ a {
   vertical-align: baseline;
   background: transparent;
 }
+a:hover,
+a:active {
+  outline: none;
+}
 del {
   text-decoration: line-through;
 }
@@ -133,7 +131,6 @@ dfn[title] {
   border-bottom: 1px dotted #000000;
   cursor: help;
 }
-/* tables still need cellspacing="0" in the markup */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -191,12 +188,6 @@ table {
   font-size: inherit;
   font: 100%;
 }
-/* Accessible focus treatment
-	people.opera.com/patrickl/experiments/keyboard/test */
-a:hover,
-a:active {
-  outline: none;
-}
 small {
   font-size: 85%;
 }
@@ -208,8 +199,6 @@ td,
 td img {
   vertical-align: top;
 }
-/* Make sure sup and sub don't screw with your line-heights
-	gist.github.com/413930 */
 sub,
 sup {
   font-size: 75%;
@@ -222,14 +211,12 @@ sup {
 sub {
   bottom: -0.25em;
 }
-/* standardize any monospaced elements */
 pre,
 code,
 kbd,
 samp {
   font-family: monospace, sans-serif;
 }
-/* hand cursor on clickable elements */
 .clickable,
 label,
 input[type=button],
@@ -237,37 +224,23 @@ input[type=submit],
 button {
   cursor: pointer;
 }
-/* Webkit browsers add a 2px margin outside the chrome of form elements */
 button,
 input,
 select,
 textarea {
   margin: 0;
 }
-/* make buttons play nice in IE */
 button {
   width: auto;
   overflow: visible;
 }
-/* scale images in IE7 more attractively */
 .ie7 img {
   -ms-interpolation-mode: bicubic;
 }
-/* prevent BG image flicker upon hover */
-/*.ie6 html {filter:expression(document.execCommand("BackgroundImageCache", false, true));}*/
-/* let's clear some floats */
-.clearfix:before,
 .clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.clearfix:after {
+  content: "";
+  display: table;
   clear: both;
-}
-.clearfix {
-  zoom: 1;
 }
 /* Colors */
 /* Mixins */
@@ -356,10 +329,10 @@ form .error-text {
   padding: 1em;
 }
 .other-header a {
-  color: #051c18;
+  color: #99be40;
 }
 .other-header a:hover {
-  color: #99be40;
+  color: #89af2d;
 }
 .other-header h1 {
   font-family: 'Oleo Script Swash Caps', Georgia, cursive;
@@ -389,16 +362,16 @@ form .error-text {
   margin: 1.5em auto 0;
   max-width: 1000px;
 }
-.posts-content > h2 {
-  font-size: 1.5em;
-  color: #666;
-  text-align: center;
-}
 .posts-content .post h3 {
   display: inline-block;
   margin-right: 5px;
   font-size: 1.5em;
   margin-bottom: .5em;
+}
+.posts-content > h2 {
+  font-size: 1.5em;
+  color: #666666;
+  text-align: center;
 }
 .posts-content .post ul,
 .posts-content .event ul {
@@ -415,7 +388,7 @@ form .error-text {
 }
 .meta {
   font-size: .75em;
-  color: #666;
+  color: #666666;
   display: inline-block;
   margin-left: 2px;
 }
@@ -429,8 +402,8 @@ form .error-text {
 .post ul {
   padding: 0 0 0 2.5em;
 }
-.post ul li,
-.post ol li {
+.post ol li,
+.post ul li {
   margin: 0 0 .75em;
 }
 .post ol li {
@@ -439,53 +412,53 @@ form .error-text {
 ol.commentlist {
   list-style: none;
 }
-ol.commentlist li.comment {
-  border-bottom: 1px dotted #666;
+ol.commentlist ol.commentlist li.comment {
+  border-bottom: 1px dotted #666666;
   padding: 10px;
 }
-ol.commentlist li.comment div.vcard cite.fn {
+ol.commentlist ol.commentlist li.comment div.vcard cite.fn {
   font-style: normal;
 }
-ol.commentlist li.comment div.vcard img.avatar {
+ol.commentlist ol.commentlist li.comment div.vcard img.avatar {
   float: right;
   margin: 0 0 10px 10px;
 }
-ol.commentlist li.comment div.comment-meta {
+ol.commentlist ol.commentlist li.comment div.comment-meta {
   font-size: 10px;
 }
-ol.commentlist li.comment div.comment-meta a {
+ol.commentlist ol.commentlist li.comment div.comment-meta a {
   color: #cccccc;
 }
-ol.commentlist li.comment div.reply {
+ol.commentlist ol.commentlist li.comment div.reply {
   font-size: 11px;
 }
-ol.commentlist li.comment div.reply a {
+ol.commentlist ol.commentlist li.comment div.reply a {
   font-weight: bold;
 }
-ol.commentlist li.comment ul.children {
+ol.commentlist ol.commentlist li.comment ul.children {
   list-style: none;
   margin: 10px 0 0;
 }
-ol.commentlist li.comment ul.children li.depth-2 {
-  border-left: 5px solid #555;
+ol.commentlist ol.commentlist li.comment ul.children li .depth-2 {
+  border-left: 5px solid #666666;
   margin: 0 0 10px 10px;
 }
-ol.commentlist li.comment ul.children li.depth-3 {
-  border-left: 5px solid #999;
+ol.commentlist ol.commentlist li.comment ul.children li .depth-3 {
+  border-left: 5px solid #999999;
   margin: 0 0 10px 10px;
 }
-ol.commentlist li.comment ul.children li.depth-4 {
-  border-left: 5px solid #bbb;
+ol.commentlist ol.commentlist li.comment ul.children li .depth-4 {
+  border-left: 5px solid #cccccc;
   margin: 0 0 10px 10px;
 }
-ol.commentlist li.even {
+ol.commentlist ol.commentlist li.even {
   background: #ffffff;
 }
-ol.commentlist li.odd {
+ol.commentlist ol.commentlist li.odd {
   background: #f6f6f6;
 }
-ol.commentlist li.parent {
-  border-left: 5px solid #111;
+ol.commentlist ol.commentlist li.parent {
+  border-left: 5px solid #333333;
 }
 .btn,
 input[type="submit"] {
@@ -789,7 +762,7 @@ input[type="submit"][disabled],
     padding-bottom: 0;
     border: 0;
     -webkit-box-sizing: border-box;
-    -mozbox-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-right: 1.5em;
   }
