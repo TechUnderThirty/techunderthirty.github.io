@@ -1,11 +1,29 @@
 @media screen and (max-width: 1280px) {
 	.hero-home {padding: 4.5em 6% 6em;}
+	.about-container {
+		.authorboxes {
+			h3 {
+				&:before, &:after {width:36%;}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 960px) {
 	.hero-home {padding: 4.5em 3% 6em;}
 	.hero-home #sidebar {margin:2em 0 0; padding:2em 6%; width:100%;}
 	.hero-home article {width:100%; padding:0;}
+	.about-container {
+		.volunteers {padding:60px 60px 10px;}
+		.authorboxes {
+			.author-info {width:100%; margin:0 0 50px; .clearfix;
+				a.avatar {float:left; width:20%; margin:0 15px 0 0;}
+			}
+			h3 {
+				&:before, &:after {width:35%;}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -13,6 +31,17 @@
 	.other-header h1, .other-header h2 {display:block;}
 	.one-fourth, .three-fourths {width:100%;}
 	.posts-content {padding:2em 5% 0;}
+	.about-container {
+		article.page, .volunteers {padding-left:0; padding-right:0;}
+		.authorboxes {
+			.author-info {
+				a.avatar {width:33%;}
+			}
+			h3 {
+				&:before, &:after {width:33%;}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 640px) and (max-width: 960px){
@@ -25,6 +54,41 @@
 
 	.btn-facebook, .btn-twitter, .btn-meetup {font-size:1em; display:block; margin:1em 0 0;}
 	.btn-facebook i, .btn-twitter i {padding-right:.75em;}	
+	.about-container {
+		article.page {padding-bottom:40px}
+		.volunteers {padding-top:40px;}
+		.authorboxes {padding:40px;
+			.author-info {width:100%; margin:0 0 50px; .clearfix;
+				a.avatar {float:left; width:50px; margin:0 15px 0 0;}
+			}
+			h3 {
+				&:before, &:after {width:27%;}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 512px) {
+	.about-container {
+		.authorboxes {
+			h3 {
+				&:before, &:after {width:25%;}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.about-container {
+		.authorboxes {padding:20px;
+			.author-info {width:100%; margin:0 0 50px; .clearfix;
+				a.avatar {float:left; width:50px; margin:0 15px 0 0;}
+			}
+			h3 {margin-bottom:25px;
+				&:before, &:after {width:20%;}
+			}
+		}
+	}
 }
 
 @media all and (orientation: portrait) {

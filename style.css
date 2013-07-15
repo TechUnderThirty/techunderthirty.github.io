@@ -1687,8 +1687,8 @@ input[type="submit"][disabled],
   margin: 0 auto;
 }
 #footer {
-  border-top: 1px dotted #cccccc;
-  padding-top: .5em;
+  border-top: 1px solid #d9d9d9;
+  padding-top: .75em;
   padding-bottom: .75em;
   margin: 3em 0 0;
   text-align: center;
@@ -1700,6 +1700,7 @@ input[type="submit"][disabled],
 #footer .btn-mini i {
   color: #00a78d;
   font-size: 1.25em;
+  vertical-align: middle;
 }
 #footer .btn-mini:hover i {
   color: #99be40;
@@ -1731,9 +1732,7 @@ input[type="submit"][disabled],
   max-width: 1000px;
 }
 .about-container article.page {
-  padding: 60px 70px;
-  background: rgba(0, 167, 141, 0.15);
-  border-bottom: 1px solid rgba(0, 167, 141, 0.25);
+  padding: 60px;
 }
 .about-container article.page h2 {
   font-size: 30px;
@@ -1745,6 +1744,10 @@ input[type="submit"][disabled],
 .about-container article.page p:last-of-type {
   margin: 0;
 }
+.about-container article.page,
+.about-container .volunteers {
+  text-shadow: 0 -2px 0 rgba(255, 255, 255, 0.75);
+}
 .about-container article.page p,
 .about-container .volunteers p {
   color: #333333;
@@ -1754,9 +1757,9 @@ input[type="submit"][disabled],
   margin-bottom: 15px;
 }
 .about-container .authorboxes {
-  padding: 0 0 60px;
-  border-width: 1px 0;
-  text-shadow: 0 -2px 0 rgba(255, 255, 255, 0.75);
+  padding: 60px;
+  background: rgba(0, 167, 141, 0.08);
+  border: 1px solid rgba(0, 167, 141, 0.05);
 }
 .about-container .authorboxes:after {
   content: "";
@@ -1764,10 +1767,10 @@ input[type="submit"][disabled],
   clear: both;
 }
 .about-container .authorboxes h3 {
-  color: #999999;
+  color: rgba(0, 0, 0, 0.5);
   text-align: center;
   display: block;
-  margin: 60px auto 50px;
+  margin: 0 auto 50px;
   position: relative;
 }
 .about-container .authorboxes h3:before,
@@ -1824,9 +1827,7 @@ input[type="submit"][disabled],
   line-height: 1.65em;
 }
 .about-container .volunteers {
-  padding: 60px 80px;
-  background: rgba(255, 255, 255, 0.4);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 60px 140px 10px;
 }
 .about-container .volunteers h3 {
   color: #000000;
@@ -1837,6 +1838,10 @@ input[type="submit"][disabled],
 @media screen and (max-width: 1280px) {
   .hero-home {
     padding: 4.5em 6% 6em;
+  }
+  .about-container .authorboxes h3:before,
+  .about-container .authorboxes h3:after {
+    width: 36%;
   }
 }
 @media screen and (max-width: 960px) {
@@ -1852,6 +1857,27 @@ input[type="submit"][disabled],
     width: 100%;
     padding: 0;
   }
+  .about-container .volunteers {
+    padding: 60px 60px 10px;
+  }
+  .about-container .authorboxes .author-info {
+    width: 100%;
+    margin: 0 0 50px;
+  }
+  .about-container .authorboxes .author-info:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .about-container .authorboxes .author-info a.avatar {
+    float: left;
+    width: 20%;
+    margin: 0 15px 0 0;
+  }
+  .about-container .authorboxes h3:before,
+  .about-container .authorboxes h3:after {
+    width: 35%;
+  }
 }
 @media screen and (max-width: 768px) {
   .other-header h1,
@@ -1864,6 +1890,18 @@ input[type="submit"][disabled],
   }
   .posts-content {
     padding: 2em 5% 0;
+  }
+  .about-container article.page,
+  .about-container .volunteers {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about-container .authorboxes .author-info a.avatar {
+    width: 33%;
+  }
+  .about-container .authorboxes h3:before,
+  .about-container .authorboxes h3:after {
+    width: 33%;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 960px) {
@@ -1894,6 +1932,65 @@ input[type="submit"][disabled],
   .btn-facebook i,
   .btn-twitter i {
     padding-right: .75em;
+  }
+  .about-container article.page {
+    padding-bottom: 40px;
+  }
+  .about-container .volunteers {
+    padding-top: 40px;
+  }
+  .about-container .authorboxes {
+    padding: 40px;
+  }
+  .about-container .authorboxes .author-info {
+    width: 100%;
+    margin: 0 0 50px;
+  }
+  .about-container .authorboxes .author-info:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .about-container .authorboxes .author-info a.avatar {
+    float: left;
+    width: 50px;
+    margin: 0 15px 0 0;
+  }
+  .about-container .authorboxes h3:before,
+  .about-container .authorboxes h3:after {
+    width: 27%;
+  }
+}
+@media screen and (max-width: 512px) {
+  .about-container .authorboxes h3:before,
+  .about-container .authorboxes h3:after {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-container .authorboxes {
+    padding: 20px;
+  }
+  .about-container .authorboxes .author-info {
+    width: 100%;
+    margin: 0 0 50px;
+  }
+  .about-container .authorboxes .author-info:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .about-container .authorboxes .author-info a.avatar {
+    float: left;
+    width: 50px;
+    margin: 0 15px 0 0;
+  }
+  .about-container .authorboxes h3 {
+    margin-bottom: 25px;
+  }
+  .about-container .authorboxes h3:before,
+  .about-container .authorboxes h3:after {
+    width: 20%;
   }
 }
 @media all and (orientation: portrait) {

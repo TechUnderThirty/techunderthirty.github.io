@@ -1,16 +1,16 @@
 .about-container {width:90%; margin:0 auto; max-width:1000px;
-	article.page {padding:60px 70px; background:fade(@green,15%); border-bottom:1px solid fade(@green,25%);
+	article.page {padding:60px;
 		h2 {font-size:30px; margin-bottom:10px;}
 		p {font-size:20px;
 			&:last-of-type {margin:0;}
 		}
 	}
-	article.page, .volunteers {
+	article.page, .volunteers {text-shadow:0 -2px 0 fade(white,75%);
 		p {color:@grayD3;}
 	}
 	h3 {font-size:28px; margin-bottom:15px;}
-	.authorboxes {padding:0 0 60px; border-width:1px 0; .clearfix; text-shadow:0 -2px 0 fade(white,75%);
-		h3 {color:@grayD1; text-align:center; display:block; margin:60px auto 50px; position:relative;
+	.authorboxes {padding:60px; background:fade(@green,8%); border:1px solid fade(@green,5%); .clearfix;
+		h3 {color:fade(@black,50%); text-align:center; display:block; margin:0 auto 50px; position:relative;
 			&:before, &:after {content:""; position:absolute; width:40%; height:1px; background:fade(@green,25%); top:50%;}
 			&:before {left:0;}
 			&:after {right:0;}
@@ -29,7 +29,7 @@
 			p.author-description {color:@grayD2; border-top:1px dotted fade(@green,40%); margin:5px 0 0; padding:10px 0 0; font-size:14px; line-height:1.65em;}
 		}
 	}
-	.volunteers {padding:60px 80px; background:fade(@white,40%); border-top:1px solid fade(@black,10%);
+	.volunteers {padding:60px 140px 10px;
 		h3 {color:@black;}
 		p {
 			&:last-of-type {margin:0;}
