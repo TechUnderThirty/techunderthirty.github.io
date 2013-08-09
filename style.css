@@ -1278,6 +1278,7 @@ a:link {
 p {
   line-height: 1.5em;
   margin-bottom: 1em;
+  font-family: 'Noto Serif', Serif;
 }
 input[type="text"],
 input[type="email"],
@@ -1403,6 +1404,7 @@ form .error-text {
 .post ol,
 .post ul {
   padding: 0 0 0 2.5em;
+  font-family: 'Noto Serif', Serif;
 }
 .post ol li,
 .post ul li {
@@ -1834,6 +1836,122 @@ input[type="submit"][disabled],
 }
 .about-container .volunteers p:last-of-type {
   margin: 0;
+}
+.sponsor-container .sponsor-container-full {
+  padding: 0;
+  background: rgba(0, 167, 141, 0.08);
+  border: 1px solid rgba(0, 167, 141, 0.25);
+}
+.sponsor-container article.page {
+  margin: 80px auto;
+  max-width: 1000px;
+}
+.sponsor-container article.page h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.sponsor-container article.page p {
+  font-size: 20px;
+}
+.sponsor-container article.page p:last-of-type {
+  margin: 0;
+}
+.sponsor-container article.page p {
+  color: #333333;
+}
+.sponsor-container h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.sponsor-container .sponsor-reasons,
+.sponsor-container .sponsorship-levels {
+  margin: 100px auto 50px;
+}
+.sponsor-container .sponsor-reasons p,
+.sponsor-container .sponsorship-levels p {
+  color: #333333;
+  font-size: 18px;
+}
+.sponsor-container .sponsor-reasons,
+.sponsor-container .sponsorship-levels,
+.sponsor-container article.page {
+  width: 90%;
+}
+.sponsor-container .sponsor-reasons {
+  max-width: 800px;
+  text-shadow: 0 -2px 0 rgba(255, 255, 255, 0.75);
+}
+.sponsor-container .sponsorship-levels {
+  max-width: 1100px;
+  border-top: 1px solid #cccccc;
+  padding: 100px 0 0;
+}
+.sponsor-container .sponsorship-levels h3 {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 30px;
+}
+.sponsor-container .sponsorship-levels article h4 {
+  color: #666666;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 167, 141, 0.25);
+  padding: 0 0 5px;
+  margin: 0 0 10px;
+}
+.sponsor-container .sponsorship-levels article h5 {
+  color: #666666;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 15px 0 5px;
+  border-bottom: 1px dotted rgba(0, 167, 141, 0.2);
+  padding: 0 0 4px;
+}
+.sponsor-container .sponsorship-levels article > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sponsor-container .sponsorship-levels article > ul > li {
+  width: 22.75%;
+  float: left;
+  margin: 0 3% 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(0, 167, 141, 0.08);
+  border: 1px solid rgba(0, 167, 141, 0.05);
+  padding: 10px 15px;
+}
+.sponsor-container .sponsorship-levels article > ul > li:last-child {
+  margin: 0;
+}
+.sponsor-container .sponsorship-levels article > ul > li > ul > li:first-child > strong {
+  font-size: 40px;
+  font-family: 'Noto Serif', Serif;
+  color: #333333;
+  margin: 15px 0 0;
+  display: block;
+  text-align: center;
+}
+.sponsor-container .sponsorship-levels article > ul > li h5 + ul {
+  font-family: 'Noto Serif', Serif;
+}
+.sponsor-container .sponsorship-levels article > ul > li h5 + ul > li {
+  font-size: 13px;
+  margin: 0 0 5px;
+}
+.sponsor-container .sponsorship-levels article > ul > li h5 + ul > li:before {
+  content: "- ";
+}
+.sponsor-container .sponsorship-levels article > ul > li > ul > li:last-child {
+  margin: 20px 0 0;
+}
+.sponsor-container .sponsorship-levels .btn {
+  display: block;
+  margin: 50px auto 0;
+  padding: 20px 10px;
+  width: 46.5%;
 }
 @media screen and (max-width: 1280px) {
   .hero-home {
