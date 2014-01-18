@@ -1,0 +1,98 @@
+
+.posts-content, #footer {padding:0 10%;}
+.posts-content {border-top:1px solid @greenD1; padding-top:2em;
+	.post {background:@white; border:1px solid @gray; box-shadow:inset 0 0 2px fade(@black,15%), 0 0 5px fade(@black,15%); padding:2em; margin:1.5em auto 0; max-width:1000px;
+		h3 {display:inline-block; margin-right:5px; font-size:1.5em; margin-bottom:.5em;}
+	}
+	> h2 {font-size:1.5em; color:@grayD2; text-align:center;}
+	.post, .event {
+		ul {list-style:disc; padding:0 0 0 1em;
+			li {margin-bottom:.5em;
+				&:last-child {margin-bottom:1em;}
+			}
+		}
+	}
+}
+.meta {font-size:.75em; color:@grayD2; display:inline-block; margin-left:2px;
+	span.author {margin-left:7px;}
+}
+
+.post {
+	ul {list-style:disc;}
+	ol, ul {padding:0 0 0 2.5em; font-family: 'Noto Serif', Serif;
+		li {margin:0 0 .75em;}
+	}
+	ol li {line-height: 1.5em;}
+}
+
+.entry-content {
+	a {
+		&:hover {}
+	}
+}
+
+#meta {}
+.postmetadata {}
+
+.navgation {}
+.next-posts {}
+.prev-posts {}
+
+#searchform {}
+#s {}
+#searchsubmt {}
+	
+ol.commentlist {list-style: none;
+	ol.commentlist li {
+		&.alt {}
+		&.bypostauthor {}
+		&.byuser {}
+		&.comment-author-admin {}
+		&.comment {border-bottom: 1px dotted @grayD2; padding: 10px;
+			div {
+				&.comment-author {}
+				&.vcard {
+					cite.fn {font-style: normal;
+						ol.commentlist li.comment div.vcard cite.fn a.url {}
+					}
+					img {
+						&.avatar {float:right; margin: 0 0 10px 10px;}
+						&.avatar-32 {}
+						&.photo {}
+					}
+					ol.commentlist li.comment div.vcard span.says {}
+				}
+				&.commentmetadata {}
+				&.comment-meta {font-size: 10px;
+					a {color: @gray;}
+				}
+				&.reply {font-size: 11px;
+					a {font-weight: bold;}
+				}
+			}
+			p {}
+			ul {
+				&.children {list-style: none; margin: 10px 0 0;
+					li {
+						.alt {}
+						.bypostauthor {}
+						.byuser {}
+						.comment {}
+						.comment-author-admin {}
+						.depth-2 {border-left: 5px solid @grayD2; margin: 0 0 10px 10px;}
+						.depth-3 {border-left: 5px solid @grayD1; margin: 0 0 10px 10px;}
+						.depth-4 {border-left: 5px solid @gray; margin: 0 0 10px 10px;}
+						.depth-5 {}
+						.odd {}
+					}
+				}
+			}
+		}
+		&.even {background: @white;}
+		&.odd {background: @grayL3;}
+		&.parent {border-left: 5px solid @grayD3;}
+		&.thread-alt {}
+		&.thread-even {}
+		&.thread-odd {}
+	}
+}

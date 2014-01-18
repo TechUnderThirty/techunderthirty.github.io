@@ -1,0 +1,42 @@
+.sponsor-container {
+	.sponsor-container-full {padding:0; background:fade(@green,8%); border:1px solid fade(@green,25%);}
+	article.page {margin:80px auto; max-width:1000px;
+		h2 {font-size:40px; margin-bottom:10px;}
+		p {font-size:20px;
+			&:last-of-type {margin:0;}
+		}
+	}
+	article.page {
+		p {color:@grayD3;}
+	}
+	h3 {font-size:28px; margin-bottom:15px;}
+	.sponsor-reasons, .sponsorship-levels {margin:100px auto 50px;
+		p {color:@grayD3; font-size:18px;}
+	}
+	.sponsor-reasons, .sponsorship-levels, article.page {width:90%;}
+	
+	.sponsor-reasons {max-width:800px; text-shadow:0 -2px 0 fade(white,75%);}
+		
+	.sponsorship-levels {max-width:1100px; border-top:1px solid @gray; padding:100px 0 0;
+		h3 {text-align:center; font-size:32px; margin:0 0 30px;}
+		article {
+			h4 {color:@grayD2; font-size:18px; text-align:center; border-bottom:1px solid fade(@green,25%); padding:0 0 5px; margin:0 0 10px;}
+			h5 {color:@grayD2; font-weight:300; font-size:12px; margin:15px 0 5px; border-bottom:1px dotted fade(@green,20%); padding:0 0 4px;}
+			> ul {.clearfix;
+				> li {width:22.75%; float:left; margin:0 3% 0 0; .box-sizing; background:fade(@green,8%); border:1px solid fade(@green,5%); padding:10px 15px;
+					&:last-child {margin:0;}
+					> ul > li:first-child {
+						> strong {font-size:40px; font-family:'Noto Serif', Serif; color:@grayD3; margin:15px 0 0; display:block; text-align:center;}
+					}
+					h5 + ul {font-family:'Noto Serif', Serif;
+						> li {font-size:13px; margin:0 0 5px;
+							&:before {content:"- "}
+						}
+					}
+					> ul > li:last-child {margin:20px 0 0;}
+				}
+			}
+		}
+		.btn {display:block; margin:50px auto 0; padding:20px 10px; width:46.5%;}
+	}
+}

@@ -1,0 +1,81 @@
+/* Colors */
+@black: #000000;
+@white: #ffffff;
+@gray: #cccccc;
+@grayD1: #999999;
+@grayD2: #666666;
+@grayD3: #333333;
+@grayL1: #d9d9d9;
+@grayL2: #ececec;
+@grayL3: #f6f6f6;
+
+@green: #00A78D;
+@greenD1: #00937c;
+@greenD2: #08433a;
+
+@yellow: #99be40;
+@yellowD1: #89af2d;
+
+@red: #e51937;
+@redD1: #b53336;
+@redD2: #8c181a;
+
+@blue: #3b5998;
+@blueD1: #31497e;
+@blueD2: #141f36;
+@blueL1: #066591;
+@blueL2: #2578B4;
+@blueL3: #74B8EA;
+
+@linkColor: @green;
+@linkHoverColor: @yellow;
+
+/* Mixins */
+.border-radius(@radius: 4px) {
+  border-radius: @radius;
+}
+
+.box-shadow(@box-shadow: 0 0 5px fade(@black, 15%)) {
+	box-shadow:@box-shadow;
+}
+
+.placeholder(@color) {
+		&::-webkit-input-placeholder {
+			color:@color;
+		}
+		&::-moz-placeholder {
+			color:@color;
+		} /* firefox 19+ */
+		&:-ms-input-placeholder {
+			color:@color;
+		}
+}
+
+.transition(@transition: all .2s) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+.box-sizing(@box-sizing: border-box) {
+  -webkit-box-sizing: @box-sizing;
+     -moz-box-sizing: @box-sizing;
+          box-sizing: @box-sizing;
+}
+
+.opacity(@opacity) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+.gradient(@startColor: #555, @endColor: #333) {
+background-color: mix(@startColor, @endColor, 60%);
+background-image: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+background-image: -webkit-linear-gradient(top, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+background-image: -o-linear-gradient(top, @startColor, @endColor); // Opera 11.10
+background-image: linear-gradient(to bottom, @startColor, @endColor); // Standard, IE10
+background-repeat: repeat-x;
+filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@startColor),argb(@endColor))); // IE9 and down
+}

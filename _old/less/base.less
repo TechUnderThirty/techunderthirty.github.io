@@ -1,0 +1,27 @@
+body {font-family: 'Raleway', Helvetica Neue, Helvetica, sans-serif; background:url(img/ticks.png);}
+body, select, input, textarea {color: @black;}
+
+a {color: @linkColor; text-decoration:none;
+	&:hover {color: @linkHoverColor;}
+}
+
+::-moz-selection{background: @greenD2; color: @white; text-shadow: none;}
+::selection {background: @greenD2; color: @white; text-shadow: none;} 
+a:link {-webkit-tap-highlight-color: @greenD2;} 
+
+p {line-height:1.5em; margin-bottom:1em; font-family: 'Noto Serif', Serif;}
+
+input[type="text"], input[type="email"], textarea {width:97%; padding:.5em 1.5%; margin-bottom:1em; border:1px @green solid;
+	&:focus {outline:none; border-color:@greenD1;}
+}
+label {display:block; margin-bottom:.5em; font-weight:bold;}
+form {
+	.required {color:@green;}
+	.error-text {margin-bottom:.5em; font-size:.75em;}
+}
+
+.view-more-link {color:@white; background:@greenD1; display:inline-block; padding:.25em .5em; border-radius:5px; margin-left:5px; font-weight:normal; font-size:.45em; text-decoration:none;}
+
+.one-fourth, .three-fourths {float:left;}
+.one-fourth {width:25%;}
+.three-fourths {width:75%;}
