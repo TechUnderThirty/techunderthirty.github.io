@@ -91,7 +91,26 @@
 }
 	
 @media screen and (max-width: 640px) {
-
+	#header {
+		h1 {
+			display:block;
+			font-size:3em;
+			margin-bottom:.5em;
+		}
+		
+		#navigation {
+			ul {			
+				li {
+					font-size:1.25em;
+				}
+			}
+		}
+	}
+	
+	.hero-home {
+		padding-top:1em;
+	}
+	
 	.btn-facebook, .btn-twitter, .btn-meetup {font-size:1em; display:block; margin:1em 0 0;}
 	.btn-facebook i, .btn-twitter i {padding-right:.75em;}	
 	.about-container {
@@ -115,8 +134,16 @@
 		.sponsorship-levels {padding:40px 0 0;
 			article {
 				> ul {
-					> li {width:100%; margin:0 0 20px;
+					> li {width:100%;
+						margin:0 0 20px;
 						&:first-child {padding-bottom:28px;}
+						h5 {
+							font-size:1em;
+							
+							+ ul > li {
+								font-size:1em;
+							}
+						}
 					}
 				}
 			}

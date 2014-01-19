@@ -1689,13 +1689,20 @@ input[type="submit"][disabled],
   width: 100% !important;
 }
 .contact-form {
-  padding: 2em 5%;
-  border-top: 1px solid #cccccc;
+  padding: 2em 0;
+  border-top: 1px dotted #cccccc;
   margin-top: 2em;
 }
 .contact-form form {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
+}
+.contact-form input[type="submit"] {
+  width: 100%;
+}
+.contact-form textarea {
+  min-height: 200px;
+  resize: none;
 }
 #footer {
   border-top: 1px solid #d9d9d9;
@@ -1730,6 +1737,20 @@ input[type="submit"][disabled],
 }
 .hero-home p {
   color: #ffffff;
+}
+#mc-registration {
+  padding-top: 3em;
+}
+#mc-registration .post {
+  background: #99be40;
+  max-width: 650px;
+  margin: 0 auto;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+#mc-registration #mc_embed_signup input[type="submit"] {
+  display: block;
+  width: 100%;
 }
 .about-container {
   width: 90%;
@@ -2078,6 +2099,17 @@ input[type="submit"][disabled],
   }
 }
 @media screen and (max-width: 640px) {
+  #header h1 {
+    display: block;
+    font-size: 3em;
+    margin-bottom: .5em;
+  }
+  #header #navigation ul li {
+    font-size: 1.25em;
+  }
+  .hero-home {
+    padding-top: 1em;
+  }
   .btn-facebook,
   .btn-twitter,
   .btn-meetup {
@@ -2138,6 +2170,12 @@ input[type="submit"][disabled],
   }
   .sponsor-container .sponsorship-levels article > ul > li:first-child {
     padding-bottom: 28px;
+  }
+  .sponsor-container .sponsorship-levels article > ul > li h5 {
+    font-size: 1em;
+  }
+  .sponsor-container .sponsorship-levels article > ul > li h5 + ul > li {
+    font-size: 1em;
   }
   .sponsor-container .sponsorship-levels .btn {
     width: 100%;
