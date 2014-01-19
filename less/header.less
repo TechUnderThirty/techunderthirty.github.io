@@ -30,16 +30,27 @@
 	#navigation {
 		max-width:750px;
 		display:inline-block;
+		position:relative;
 		
 		ul {
 			display:inline-block;
+			z-index:2;
+			position:relative;
 			
 			li {
 				display:inline-block;
 				font-size:1.5em;
 				margin-right:30px;
 				font-weight:bold;
+				
+				&:last-child {
+					margin-right:0;
+				}
 			}
 		}
+	}
+	
+	+ .posts-content {
+		border-top:1px solid @greenD1;
 	}
 }

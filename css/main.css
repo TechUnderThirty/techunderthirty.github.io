@@ -1350,9 +1350,12 @@ form .error-text {
 #header #navigation {
   max-width: 750px;
   display: inline-block;
+  position: relative;
 }
 #header #navigation ul {
   display: inline-block;
+  z-index: 2;
+  position: relative;
 }
 #header #navigation ul li {
   display: inline-block;
@@ -1360,12 +1363,17 @@ form .error-text {
   margin-right: 30px;
   font-weight: bold;
 }
+#header #navigation ul li:last-child {
+  margin-right: 0;
+}
+#header + .posts-content {
+  border-top: 1px solid #00937c;
+}
 .posts-content,
 #footer {
   padding: 0 10%;
 }
 .posts-content {
-  border-top: 1px solid #00937c;
   padding-top: 2em;
 }
 .posts-content .post {
@@ -1687,6 +1695,14 @@ input[type="submit"][disabled],
 .event .em-location-map,
 .event .em-locations-map {
   width: 100% !important;
+}
+.contact-us .post {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-us + footer {
+  bottom: 0;
 }
 .contact-form {
   padding: 2em 0;
@@ -2191,6 +2207,19 @@ input[type="submit"][disabled],
   }
 }
 @media screen and (max-width: 480px) {
+  #header h1 {
+    font-size: 2.5em;
+    margin: 0 auto .5em;
+    display: block;
+  }
+  #header #navigation ul li {
+    margin-right: 0;
+    font-size: 1em;
+  }
+  #header #navigation ul li a {
+    display: block;
+    padding: .5em .75em;
+  }
   .about-container .authorboxes {
     padding: 20px;
   }
