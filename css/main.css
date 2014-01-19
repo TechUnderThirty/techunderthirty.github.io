@@ -1348,6 +1348,7 @@ form .error-text {
   color: #08433a;
 }
 #header #navigation {
+  max-width: 750px;
   display: inline-block;
 }
 #header #navigation ul {
