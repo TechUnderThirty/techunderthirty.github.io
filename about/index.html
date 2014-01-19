@@ -1,42 +1,62 @@
 ---
-layout: home
+layout: default
 title: Tech Under Thirty
 ---
+<section class="about-container">
+			<article>
+				<h2>About Tech Under Thirty</h2>
+				<p>Tech Under Thirty is a budding group for technology-oriented people under the age of thirty. We bring designers, developers, engineers, and other people from the tech industry together to form friendships and cross-pollinate ideas.</p>
 
-<section class="hero-home clearfix">
-		<article>
-			<div class="entry">
-				<h2 class="description">Do something. Learn something. A meetup for design & tech-loving Millenials.</h2>
-				<p>Tech Under Thirty is a new group for designers &amp; tech-oriented people under the age of thirty. If you’re a game developer, a web designer, a print designer, an engineer, blogger, or anything in between, we’re interested in meeting you.</p>
-				<p>Tech Under Thirty’s purpose is to give Gen Yers in design and technology fields a chance to branch out amongst their peers. Students and those interested in getting into design &amp; tech-related fields are welcome to join us. No experience required!</p>
-				<p>
-					<a href="http://meetup.com/techunderthirty" class="btn btn-meetup" target="_blank">
-						<i class="ss-icon ss-standard ss-calendar"></i>
-						Join us on Meetup!
-					</a>
-					<a href="https://www.facebook.com/TechUnderThirty" class="btn btn-facebook" target="_blank">
-						<i class="ss-facebook"></i>
-						Like us on Facebook
-					</a>
-				</p>
-			</div>
-		</article>
+				<p>Founded in 2013 by Catt Small, Tech Under Thirty hosts monthly meetings, workshops, and outings for people to learn new skills in a fun and friendly environment. Our goal is to build a community of confident, business-ready young people in tech fields.</p>
+			</article>
+		
+			<section class="authorboxes">
+				<h3>Who we are</h3>
+				
+				<!-- Catt -->
+				<article class="author-info">
+						<a href="http://www.cattsmall.com" title="Visit Catt's website" class="avatar">
+							<img src="http://www.gravatar.com/avatar/81a95b0e9f121dd77d9dc6ff132fcea4?s=256" />
+						</a>
+						<h4>
+							<a href="http://www.cattsmall.com" title="Visit Catt's website">Catt Small</a>
+						</h4>
+						<a href="http://twitter.com/cattsmall" title="Visit Catt's Twitter account" class="twitter">@cattsmall</a>
+						<p class="author-description">Catt is a proud gamer and UX Designer at Bedrocket Media Ventures. She started coding at the age of 12 and has been going ever since. Catt also makes video games and teaches game development with Code Liberation.</p>
+				</article>
+				
+				<!-- Asia -->
+				<article class="author-info">
+						<a href="http://www.asiahoe.com" title="Visit Asia's website" class="avatar">
+							<img src="http://www.gravatar.com/avatar/00f7dde1515b0fade04328b3438e1720?s=256" />
+						</a>
+						<h4>
+							<a href="http://www.asiahoe.com" title="Visit Asia's website">Asia Hoe</a>
+						</h4>
+						<a href="http://twitter.com/asiahoe" title="Visit Asia's Twitter account" class="twitter">@asiahoe</a>
+						<p class="author-description">Asia is a UX Designer &amp; Front-end Developer. At 14, she became intrigued by looking at artists’ websites and learned to build her own. Asia’s hobbies include writing, illustration, and video games.</p>
+				</article>
+				
+				<!-- Nicole -->
+				<article class="author-info">
+						<a href="http://www.nicoledominguez.com" title="Visit Nicole's website" class="avatar">
+							<img src="http://www.gravatar.com/avatar/f66d125e3355ffd90d62dffa5e54939c?s=256" />
+						</a>
+						<h4>
+							<a href="http://www.nicoledominguez.com" title="Visit Nicole's website">Nicole Dominguez</a>
+						</h4>
+						<a href="http://twitter.com/sodevious" title="Visit Nicole's Twitter account" class="twitter">@sodevious</a>
+						<p class="author-description">Nicole is a passionate designer with over 6 years of design and web development experience. She moved to New York to work with the best people in the tech industry, in pursuit of big goals and dreams. 
+</p>
+				</article>
+			</section>
+			
+			<section class="volunteers">
+				<article>
+					<h3><?php the_field('additional_information_title'); ?></h3>
+					<?php the_field('additional_information'); ?>
+				</article>
+			</section>
+		<?php endwhile; endif; ?>
+		<div class="clearfix"></div>
 </section>
-<section class="next-event">
-	<div id="em_widget-2" class="widget widget_em_widget">
-		<h2>Our Next Event</h2>
-		<ul>
-			<li>There aren't any events right now. Got an idea? Send us a tweet or Facebook message.</li>
-		</ul>
-	</div>
-	<div id="ns_widget_mailchimp-2" class="widget widget_ns_mailchimp">
-		<h2>Join our mailing list</h2>	
-		<form action="/" id="ns_widget_mailchimp_form-2" method="post">
-			<input type="hidden" name="ns_mc_number" value="2">
-			<label for="ns_widget_mailchimp-email-2">Email Address :</label>
-			<input id="ns_widget_mailchimp-email-2" type="text" name="ns_widget_mailchimp_email">
-			<input class="button" type="submit" name="Subscribe" value="Subscribe">
-		</form>
-		<script>jQuery('#ns_widget_mailchimp_form-2').ns_mc_widget({"url" : "/index.php", "cookie_id" : "ns_widget_mailchimp-2", "cookie_value" : "cdf01324245c63cd4dcf07f2b9868e1c", "loader_graphic" : "http://techunderthirty.com/wp-content/plugins/mailchimp-widget/images/ajax-loader.gif"}); </script>
-	</div>
-</div>

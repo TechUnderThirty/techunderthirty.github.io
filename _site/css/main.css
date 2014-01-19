@@ -1340,6 +1340,13 @@ form .error-text {
   display: inline-block;
   margin-right: 30px;
 }
+#header h1 a {
+  color: #000000;
+  opacity: .75;
+}
+#header h1 a:hover {
+  color: #08433a;
+}
 #header #navigation {
   display: inline-block;
 }
