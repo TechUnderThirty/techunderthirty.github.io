@@ -1687,15 +1687,13 @@ input[type="submit"][disabled],
 .event .em-locations-map {
   width: 100% !important;
 }
-#FSContact1,
-#FSContact2 {
+.contact-form {
   padding: 2em 5%;
   border-top: 1px solid #cccccc;
   margin-top: 2em;
 }
-#FSContact1 form,
-#FSContact2 form {
-  max-width: 700px;
+.contact-form form {
+  max-width: 600px;
   margin: 0 auto;
 }
 #footer {
