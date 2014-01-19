@@ -8,6 +8,7 @@ The Jekyll theme for [Tech Under Thirty's website](http://techunderthirty.com).
 * [Symbolset](http://symbolset.com/)
 * [Modernizr](http://modernizr.com/)
 * [Subtle Patterns](http://subtlepatterns.com/)
+* [LESS CSS](http://lesscss.org/)
 
 
 ##Setup:
