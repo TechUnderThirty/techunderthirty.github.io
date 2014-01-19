@@ -1,0 +1,23 @@
+---
+layout: blog
+title: Your New Jekyll Site
+---
+
+<section class="posts-content">	
+  <h2>Blog</h2>
+  {% for post in site.posts %}
+			<article class="post-70 post type-post status-publish format-standard hentry category-events category-news tag-awesome tag-content-strategy" id="post-70">
+
+				<h3 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></li></h3>
+				<footer class="meta">
+					<i class="ss-standard ss-clock"></i> 
+					<time datetime="{{ page.date}}" pubdate="" class="updated">
+						{{ post.date | date: '%B %d, %Y' }}
+					</time>
+				</footer>
+				<div class="entry-content">
+					{{ post.content }}
+				</div>
+			</article>
+  {% endfor %}
+</section>
