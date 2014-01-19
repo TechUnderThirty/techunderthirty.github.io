@@ -2,6 +2,7 @@
 layout: post
 title: "Tomorrow's our first hacknight."
 date: 2013-02-25
+author: "Catt Small"
 ---
 
 We’re so stoked to run our first hacknight tomorrow. It’s going to be a nice crowd hanging out, chatting, coding, and designing. It doesn’t matter if you’re a coding noob or a pro, you’re invited to come hang out. We’re going work for a few hours, then have a little show and tell (it’s not mandatory, don’t worry!). We’ll have drinks and food, so come hungry!

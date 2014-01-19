@@ -2,6 +2,7 @@
 layout: post
 title: "Sample problems for Interaction Night"
 date: 2013-03-19
+author: "Catt Small"
 ---
 
 We’re so excited for tomorrow’s Interaction Night! Last month’s hacknight was awesome — we had some great conversations and worked on cool stuff.

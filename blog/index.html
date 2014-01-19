@@ -14,6 +14,10 @@ title: Tech Under Thirty - Blog
 					<time datetime="{{ page.date}}" pubdate="" class="updated">
 						{{ post.date | date: '%B %d, %Y' }}
 					</time>
+					<span class="author vcard">
+						<i class="ss-standard ss-user"></i>
+						<span class="fn">{{post.author}}</span>
+					</span>
 				</footer>
 				<div class="entry-content">
 					{{ post.content }}

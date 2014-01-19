@@ -2,6 +2,7 @@
 layout: post
 title: "Wow, wow, wow!"
 date: 2013-02-07
+author: "Catt Small"
 ---
 
 So much awesomeness has happened in our first month. We’re so happy to say that, so far, Tech Under Thirty is doing very well! Our first event was a lot of fun; we met a lot of cool, smart, intelligent people. A recap will be posted soon with some photos and a rundown of what went on. We learned a lot from you all, and we want to document this process as this group grows with its attendees.

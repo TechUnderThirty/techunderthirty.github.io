@@ -15,6 +15,10 @@ layout: blog
 			<time datetime="{{ page.date}}" pubdate="" class="updated">
 				{{ page.date | date: '%B %d, %Y' }}
 			</time>
+			<span class="author vcard">
+				<i class="ss-standard ss-user"></i>
+				<span class="fn">{{page.author}}</span>
+			</span>
 		</footer>
 		<div class="entry-content">
 			{{ content }}
