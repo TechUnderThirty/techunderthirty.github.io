@@ -1389,9 +1389,6 @@ form .error-text {
   margin-right: 5px;
   font-size: 1.5em;
 }
-.posts-content .post h3 + .entry-content {
-  margin-top: .5em;
-}
 .posts-content > h2 {
   font-size: 1.5em;
   color: #666666;
@@ -1418,6 +1415,9 @@ form .error-text {
 }
 .meta span.author {
   margin-left: 7px;
+}
+.meta + .entry-content {
+  margin-top: .5em;
 }
 .post ul {
   list-style: disc;
