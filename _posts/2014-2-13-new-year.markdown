@@ -1,17 +1,17 @@
 ---
 layout: post
 title: "New year, new design, new life changes!"
-date: 2014-1-20
+date: 2014-2-13
 author: "Catt Small"
 ---
 
 Hello, world! We apologize for the radio silence over the past several months. Here are some updates regarding Tech Under Thirty and the organizers behind the group.
 
 ####New Site Design
-Asia, Nicole and I have been working on-and-off on the new site design for several months now. Nicole suggested that we switch to [Jekyll](http://jekyllrb.com/), a small, easy-to-manage platform. I loved that idea, so I spent a few hours porting the WordPress theme to static HTML templates. It was actually pretty easy to do, though we will no longer list events on this site because of the complexity involved. Analytics showed us that people barely check this site for event purposes anyway, so we no longer saw the need to support the feature. We're as Lean as ever.
+Asia, Nicole and I have been working on-and-off on the new site design for several months now. Nicole suggested that we switch to [Jekyll](http://jekyllrb.com/), a small, easy-to-manage platform. I loved that idea, so I spent a few hours porting the WordPress theme to static HTML templates. It was actually pretty easy to do, though we will no longer list events on this site because of the complexity involved. Analytics showed us that people barely check this site for event purposes anyway, so we no longer saw the need to support the feature.
 
 ####Transitions and Life Changes
-In March of 2013, I switched from the corporate world to the startup one. It was a scary transition, but it's proven to be the best choice for my lifestyle. I've also been making a lot of games, teaching, and trying to [speak more often](http://www.slideshare.net/CattSmall).
+In June of 2013, I switched from the corporate world to the startup one. It was a scary transition, but it's proven to be the best choice for my lifestyle. I've also been making a lot of games, teaching, and trying to [speak more often](http://www.slideshare.net/CattSmall).
 
 Nicole and I worked at the same corporate company. She inspired me to start looking for better opportunities. We now work on the same floor of a coworking space for different startups. She'll be a part of [StartupBus](http://startupbus.com/) North America this year.
 
