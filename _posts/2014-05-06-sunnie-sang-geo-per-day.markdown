@@ -9,7 +9,7 @@ Hey y'all! It's been a bit since the last blog post, so here's an update.
 
 Our April event was amazing. Sunnie Sang, an entrepreneur and MFA Interaction Design candidate at School of Visual Arts, talked to the group about her experience with building her own business, leveraging social media networks to gain followers, dealing with the highs and lows of entrepreneurship, and self-management.
 
-In February 2014, Sunnie started an entrepreneurial design project with a [blogazine](http://geoperday.tumblr.com/) and geometry-inspired Etsy store called [GEO Design Store](https://www.etsy.com/shop/GEOPERDAY?ref=l2-shopheader-name). Through the project, Sunnie learned a lot about about entrepreneurship, social media marketing, and her own strength.
+**About Sunnie Sang:** In February 2014, Sunnie started an entrepreneurial design project with a [blogazine](http://geoperday.tumblr.com/) and geometry-inspired Etsy store called [GEO Design Store](https://www.etsy.com/shop/GEOPERDAY?ref=l2-shopheader-name). Through the project, Sunnie learned a lot about about entrepreneurship, social media marketing, and her own strength.
 
 Here are some inspiring points from the event:
 
